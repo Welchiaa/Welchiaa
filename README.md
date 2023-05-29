@@ -11,36 +11,13 @@
  
  <br>
  
-  ### Pra conteúdo sobre programação me segue a gente nas redes abaixo!
+ ## Me segue ae
  
 <div> 
-  <a href="https://www.youtube.com/Welchia" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" target="_blank"></a>
-  <a href="https://instagram.com/Welchialol" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
- <a href="https://twitter.com/welchia0" target="_blank"><img src="https://img.shields.io/twitter/url?style=for-the-badge&url=https%3A%2F%2Ftwitter.com%2Fwelchia0" target="_blank"></a> 
+  <a href="https://www.youtube.com/channel/UCvDp0JcGgvhMLZXBBNHwc5Q" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" target="_blank"></a>
+  <a href="https://www.instagram.com/welchialol/ target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
+ <a href="https://twitter.com/welchia0" target="_blank"><img src="https://img.shields.io/twitter/url?style=for-the-badge&url=https%3A%2F%2Ftwitter.com%2Fwelchia0" target="_blank"></a> </div>
+ <img src="https://64.media.tumblr.com/a9a19e0516227863c73a41c735606431/tumblr_nai7ivisOe1rgo4kzo1_500.gif" align="center">
   
  
-  name: Generate Datas
 
-on:
-  schedule: # execute every 12 hours
-    - cron: "* */12 * * *"
-  workflow_dispatch:
-
-jobs:
-  build:
-    name: Jobs to update datas
-    runs-on: ubuntu-latest
-    steps:
-      # Snake Animation
-      - uses: Platane/snk@master
-        id: snake-gif
-        with:
-          github_user_name: Welchiaa
-          svg_out_path: dist/github-contribution-grid-snake.svg
-
-      - uses: crazy-max/ghaction-github-pages@v2.1.3
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
